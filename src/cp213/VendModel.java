@@ -56,6 +56,9 @@ public class VendModel {
 	public JTextField selected_item_txt_field;
 	public JTextField total_cost_txt_field;
 
+	// I know now that all these variables didn't really need to be created,
+	// it could have been avoided by just setting their action listener and moving
+	// on
 	public JButton btn_letter_a;
 	public JButton btn_letter_b;
 	public JButton btn_letter_c;

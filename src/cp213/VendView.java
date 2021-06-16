@@ -336,6 +336,10 @@ public class VendView extends JPanel {
 	 */
 	private void add_selection_buttons(JPanel panel) {
 
+		// I know now that all these variables didn't really need to be created,
+		// it could have been avoided by just setting their action listener and moving
+		// on
+
 		model.btn_letter_a = new JButton("A");
 		model.btn_letter_b = new JButton("B");
 		model.btn_letter_c = new JButton("C");
@@ -354,6 +358,8 @@ public class VendView extends JPanel {
 		model.btn_symbol_asterisk = new JButton("*");
 		model.btn_number_0 = new JButton("0");
 		model.btn_symbol_pound = new JButton("#");
+
+		// looking back, could have been done with a loop
 
 		this.add_button_gbc(0, 0, model.btn_letter_a, panel);
 		this.add_button_gbc(1, 0, model.btn_letter_b, panel);
